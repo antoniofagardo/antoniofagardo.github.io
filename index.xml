@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>https://antoniofagardo.github.io/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 Dec 2019 20:32:45 -0800</lastBuildDate>
+    
+	<atom:link href="https://antoniofagardo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sunday Crepes Recipe</title>
+      <link>https://antoniofagardo.github.io/post/sunday-crepes-recipe/</link>
+      <pubDate>Sun, 15 Dec 2019 20:32:45 -0800</pubDate>
+      
+      <guid>https://antoniofagardo.github.io/post/sunday-crepes-recipe/</guid>
+      <description>This is a title And this is my first recipe</description>
+    </item>
+    
+  </channel>
+</rss>
