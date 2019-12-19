@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
+    <title>Our Best Recipes</title>
     <link>https://antoniofagardo.github.io/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <description>Recent content on Our Best Recipes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 15 Dec 2019 20:32:45 -0800</lastBuildDate>
@@ -17,7 +17,13 @@
       <pubDate>Sun, 15 Dec 2019 20:32:45 -0800</pubDate>
       
       <guid>https://antoniofagardo.github.io/post/sunday-crepes-recipe/</guid>
-      <description>This is a title And this is my first recipe</description>
+      <description>Ingredients - 15 larges crepes   4 eggs
+  500 ml of milk
+  1.5 cups of gluten free flour
+  2 table spoon of coconut oil
+  Preparation - 10 minutes   In a large mixing bowl, create a well with flour then add eggs, slowly whisking them into flour.
+  Gradually add the milk, whisking to combine.
+  Let batter stand at room temperature until bubbly on top, 40 minutes to 1 hour.</description>
     </item>
     
   </channel>
