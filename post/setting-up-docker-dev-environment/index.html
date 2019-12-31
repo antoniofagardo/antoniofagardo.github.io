@@ -7,7 +7,7 @@
     
     <title>
       
-      Sunday Crepes Recipe - Our Best Recipes
+      Setting Up Docker Dev Environment - Our Best Recipes
       
 		</title>
 
@@ -62,65 +62,65 @@
   <article class="post">
     <header class="post-header">
       
-        <img src="/uploads/crepes.jpg"></img>
+        <img src="/uploads/docker-compose.jpg"></img>
       
-      <h2 class="post-title">Sunday Crepes Recipe</h2>
+      <h2 class="post-title">Setting Up Docker Dev Environment</h2>
       <section class="post-meta">
-        <time class="post-date">2019-12-15</time>
+        <time class="post-date">2019-12-30</time>
       </section>
     </header>
     <section class="post-content">
-      <h4 id="ingredients---15-larges-crepes">Ingredients - 15 larges crepes</h4>
-<ul>
-<li>
-<p>4 eggs</p>
-</li>
-<li>
-<p>500 ml of milk</p>
-</li>
-<li>
-<p>1.5 cups of gluten free flour</p>
-</li>
-<li>
-<p>2 table spoon of coconut oil</p>
-</li>
-</ul>
-<h4 id="preparation---10-minutes">Preparation - 10 minutes</h4>
-<ol>
-<li>
-<p>In a large mixing bowl, create a well with flour then add eggs, slowly whisking them into flour.</p>
-</li>
-<li>
-<p>Gradually add the milk, whisking to combine.</p>
-</li>
-<li>
-<p>Let batter stand at room temperature until bubbly on top, 40 minutes to 1 hour.</p>
-</li>
-</ol>
-<h4 id="cooking---30-minutes">Cooking - 30 minutes</h4>
-<ul>
-<li>
-<p>About 1/4 cup at a time, drop batter evenly onto pan under medium heat, swirling it to evenly coat.</p>
-</li>
-<li>
-<p>Cook 1 minute, then flip and cook 1 minute more; repeat with remaining batter.</p>
-</li>
-</ul>
-<h6 id="melted-blue-cheese-or-roquefort--parmesan-w-ham">Melted blue cheese (or Roquefort) &amp; parmesan w/ ham</h6>
-<p>After flipping, add pieces of blue cheese and parmesan to melt.</p>
-<p>When ready, take it out, add thin slices of ham before rolling the crepe and <strong>Bon Appétit !</strong></p>
-<h6 id="brie--ham">Brie &amp; ham</h6>
-<p>Add thin slices of ham with pieces of brie on top on half of the crepe.</p>
-<p>Roll the crepe from the ham side and <strong>Bon Appétit !</strong></p>
-<h6 id="rapsberry-jam">Rapsberry Jam</h6>
-<p>Spead a thin layer of rapberry jam on 1/2 of the crepe.</p>
-<p>Roll the crepe from the raspberry side and <strong>Bon Appétit !</strong></p>
+      <p>This is a walkthrough to setup a new Python dev environment with Docker</p>
+<h2 id="requirements">Requirements:</h2>
+<p>Docker Desktop installed</p>
+<pre><code>https://docs.docker.com/docker-for-mac/install/
+</code></pre>
+<h2 id="getting-started">Getting started</h2>
+<p>Let's create a new project</p>
+<pre><code>mkdir docker-flask
+cd docker-flask
+</code></pre>
+<p>Create a directory for the flask app</p>
+<pre><code>mkdir flask_app
+touch __init__.py
+</code></pre>
+<p>Create a docker and docker-compose file for the flask project</p>
+<pre><code>touch flask_app/Dockerfile
+touch docker-compose.yml
+</code></pre>
+<p>Let's create a started flask project</p>
+<pre><code>touch app.py
+touch requirements.txt
+</code></pre>
+<p>Open the <code>app.py</code> file and put the following content:</p>
+<pre><code>from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    return 'Hello world!'
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0')
+</code></pre>
+<p>Open the <code>requirements.txt</code> file and put the following content:</p>
+<pre><code>Flask==1.1.1
+yapf==0.29.0
+pylint==2.4.4
+</code></pre>
+<h2 id="docker-commands">Docker commands</h2>
+<p>Build a new docker image for our app</p>
+<pre><code>docker build -t flaskapp:latest .
+</code></pre>
+<p><code>docker build -t &lt;new-image-name&gt;</code> to name the new image, <code>.</code> to say where is the folder for the app</p>
+<p>The Flask server will start, follow the link and you should be able to see the <code>Hello world</code> app in your brownser !!</p>
 
     </section>
     <footer class="post-footer">
       <section class="tags post-meta">
         Tagged
-        <a href="https://antoniofagardo.github.io/tags/food/">food</a>
+        <a href="https://antoniofagardo.github.io/tags/development/">development</a>
           
       </section>
     </footer>

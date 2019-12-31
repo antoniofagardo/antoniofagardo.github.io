@@ -6,10 +6,25 @@
     <description>Recent content on Our Best Recipes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 Dec 2019 20:32:45 -0800</lastBuildDate>
+    <lastBuildDate>Mon, 30 Dec 2019 21:24:24 -0800</lastBuildDate>
     
 	<atom:link href="https://antoniofagardo.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Setting Up Docker Dev Environment</title>
+      <link>https://antoniofagardo.github.io/post/setting-up-docker-dev-environment/</link>
+      <pubDate>Mon, 30 Dec 2019 21:24:24 -0800</pubDate>
+      
+      <guid>https://antoniofagardo.github.io/post/setting-up-docker-dev-environment/</guid>
+      <description>This is a walkthrough to setup a new Python dev environment with Docker
+Requirements: Docker Desktop installed
+https://docs.docker.com/docker-for-mac/install/  Getting started Let&#39;s create a new project
+mkdir docker-flask cd docker-flask  Create a directory for the flask app
+mkdir flask_app touch __init__.py  Create a docker and docker-compose file for the flask project
+touch flask_app/Dockerfile touch docker-compose.yml  Let&#39;s create a started flask project
+touch app.py touch requirements.txt  Open the app.</description>
+    </item>
     
     <item>
       <title>Sunday Crepes Recipe</title>
